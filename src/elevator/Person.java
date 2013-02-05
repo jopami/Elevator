@@ -38,7 +38,7 @@ class Person
         iID = Config.getPersonCounter();
     }
     
-    display()
+    void display()
     {//always using get
         System.out.println("ID is " + getID());
     }
