@@ -1,16 +1,16 @@
 package elevator;
 
 /*Example of a basic data class*/
-class Light
+class ElevatorButton
 {
     boolean bulb;
 
-    Light()
+    ElevatorButton()
     {
         bulb = false; //light is on
     }
 
-    Light(boolean pbulb)
+    ElevatorButton(boolean pbulb)
     {
         bulb = pbulb;
     }

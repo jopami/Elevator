@@ -17,9 +17,9 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         //testing Light
-        Light myLight = new Light();
+        ElevatorButton myLight = new ElevatorButton();
         myLight.display();
-        //Light myLight1 = new Light(false);
+        //ElevatorButton myLight1 = new ElevatorButton(false);
         //myLight1.display();
         //test get
         //System.out.println("Bulb value is " + myLight.getBulb());
