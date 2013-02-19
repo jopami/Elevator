@@ -17,8 +17,8 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         //testing Light
-        ElevatorButton myLight = new ElevatorButton();
-        myLight.display();
+        //ElevatorButton myLight = new ElevatorButton();
+        //myLight.display();
         //ElevatorButton myLight1 = new ElevatorButton(false);
         //myLight1.display();
         //test get
@@ -26,6 +26,8 @@ public class Main {
         //test set
         //myLight.setBulb(false);
         //System.out.println("Bulb value is " + myLight.getBulb());
+        Person myPerson = new Person();
+        System.out.println();
     }
 
 }
