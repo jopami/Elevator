@@ -6,6 +6,8 @@ class Config
     
     public static final int  MAXFLOORS = 10;//treated as a constant for now
     
+    public static final int TOTALBUILDINGS = 1;
+    
     private static int PersonCounter = 0;
     
     public static int getPersonCounter()
