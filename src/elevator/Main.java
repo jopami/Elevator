@@ -4,7 +4,7 @@
  */
 
 package elevator;
-
+import java.util.*;
 /**
  *
  * @author rgouveia
@@ -26,8 +26,15 @@ public class Main {
         //test set
         //myLight.setBulb(false);
         //System.out.println("Bulb value is " + myLight.getBulb());
+        
+        for (int i=0; i<10; i++)//person create test
+        {
         Person myPerson = new Person();
-        System.out.println();
+        //myPerson.setStartFloor(1);
+        myPerson.display();
+        }
+        
+        
     }
 
 }

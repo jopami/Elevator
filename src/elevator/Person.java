@@ -1,4 +1,5 @@
 package elevator;
+import java.util.*;
 
 class Person
 {
@@ -14,9 +15,11 @@ class Person
     
     Person ()
     {
+         Random rndGen = new Random(System.currentTimeMillis()); //Generate Random Number
+         
          getIDNumber();//modifies iID
-         iStartFloor = 0;
-         iStopFloor = 0;
+         iStartFloor = rndGen.nextInt(10) + 1;
+         iStopFloor = rndGen.nextInt(10) + 1;
          iStartTime = 0;
          iEndTime = 0;
     }
@@ -38,8 +41,36 @@ class Person
         iID = Config.getPersonCounter();
     }
     
+    void setStartFloor(int pStart)
+    {
+        iStartFloor = pStart;
+    }
+    
+    int getStartFloor()
+    {
+        return iStartFloor;
+    }
+    
+    void setStopFloor(int pStop)
+    {
+        iStopFloor = pStop;
+    }
+    
+    int getStopFloor()
+    {
+        return iStopFloor;
+    }
+    
+    boolean isGoingUp() //if true is going up, false down
+    {
+        return(iStartFloor < iStopFloor);
+    }
+    
     void display()
     {//always using get
         System.out.println("ID is " + getID());
+        System.out.println("Start is " + getStartFloor());
+        System.out.println("Stop is " + getStopFloor());
+        System.out.println("Is going Up = " + isGoingUp());
     }
 }//end Person
